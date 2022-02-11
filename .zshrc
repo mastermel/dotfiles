@@ -17,7 +17,7 @@ export ZSH="/Users/mel/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="powerlevel10k/powerlevel10k"
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -79,7 +79,7 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions react-native wd asdf direnv)
+plugins=(git wd zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -139,10 +139,8 @@ compinit -i
 # [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 # [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-eval "$(direnv hook zsh)"
-
 # Tmuxifier
-export PATH=$HOME/.vim/tmuxifier/bin:$PATH
+export PATH=$HOME/.tmuxifier/bin:$PATH
 eval "$(tmuxifier init -)"
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -153,3 +151,6 @@ if [ -f '/Users/mel/googl-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mel/go
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
