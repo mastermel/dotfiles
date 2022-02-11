@@ -35,3 +35,10 @@ git config --global user.name "Mel Green"
   ```
 
 ### Setup [vimconfig](https://github.com/mastermel/vimconfig)
+
+### Checkout all necessary work repos
+I've been using `~/source` as the root dir for all repos. After checking out all repos to be used for work,
+set appropriate email in each of their git configs with this script:
+```
+for dir in ~/source/*; do (cd "$dir" && git config user.email "<work email>"); done
+```
