@@ -9,7 +9,7 @@ My dotfiles, primarily used on OS X with zsh
 * [Homebrew](https://brew.sh/)
 
 ### Setup terminal:
-1. [Create a new SSH key and add it to Github]phttps://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent(
+1. [Create a new SSH key and add it to Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 2. Clone this repo to `~/dotfiles`
 4. Install [oh-my-zsh](https://ohmyz.sh/#install)
 5. Install [powerlevel10k theme](https://github.com/romkatv/powerlevel10k#getting-started)
