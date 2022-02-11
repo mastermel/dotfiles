@@ -26,7 +26,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/tools/zsh-s
 git config --global user.name "Mel Green"
 ```
 11. Install Github cli: `brew install gh`
-10. Symlink the appropriate dotfils [removing where necessary]
+10. Symlink the appropriate dotfiles [removing where necessary]
   ```
   ln -s ~/dotfiles/.asdfrc ~/.asdfrc
   ln -s ~/dotfiles/.tool-versions ~/.tool-versions
